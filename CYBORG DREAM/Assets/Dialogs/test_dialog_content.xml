@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Content>
+
+  <node>
+    <id>1</id>
+    <message>What you see is absolute.</message>
+  </node>
+
+  <node>
+    <id>2</id>
+    <message>Despicable</message>
+  </node>
+
+  <node>
+    <id>3</id>
+    <message>Ominous doctrines of a supreme  being. Can you feel it ?</message>
+  </node>
+
+  <node>
+    <id>4</id>
+    <message>Miserable</message>
+  </node>
+
+  <node>
+    <id>5</id>
+    <message>You must beg pardon.</message>
+  </node>
+
+  <node>
+    <id>6</id>
+    <message>You are on the right path.</message>
+  </node>
+
+  <node>
+    <id>7</id>
+    <message>I shall disappear as I am now complete.</message>
+  </node>
+  
+</Content>

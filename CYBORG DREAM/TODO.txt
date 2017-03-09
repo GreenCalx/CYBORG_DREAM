@@ -1,0 +1,22 @@
+﻿_______________________________
+DONE
+*******************************
+
+> Construct Graph/DialogGraph
+
+
+*******************************
+*******************************
+
+_______________________________
+TODO
+*******************************
+
+> Implement the Window GUI to display message
+> Implement the system to navigate between dialogs
+> Link this system to the graph
+
+> Enhance RC traces while it's not too late.
+> ID system for GUI elements.
+*******************************
+*******************************

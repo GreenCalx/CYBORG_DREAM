@@ -1,0 +1,61 @@
+﻿// NODE MAPPIPING
+//Node
+//  ID :
+//  SUCCESSOR_ID :
+//  PREDECESSOR_ID:
+//
+// -1 as ID means not existing
+//
+//    Structure :
+/*
+
+    1
+   / \
+  2   3
+  |  / \
+  4 5   6
+  |/
+  7
+
+ */
+{
+  "NodeList": {
+
+
+    "Node": {
+      "ID": 1,
+      "PREDECESSOR_ID": [ ],
+      "SUCCESSOR_ID": [ 2, 3 ]
+    },
+    "Node1": {
+      "ID": 2,
+      "PREDECESSOR_ID": [ 1 ],
+      "SUCCESSOR_ID": [ 4 ]
+    },
+    "Node3": {
+      "ID": 3,
+      "PREDECESSOR_ID": [ 1 ],
+      "SUCCESSOR_ID": [ 5, 6 ]
+    },
+    "Node4": {
+      "ID": 4,
+      "PREDECESSOR_ID": [ 2 ],
+      "SUCCESSOR_ID": [ 7 ]
+    },
+    "Node5": {
+      "ID": 5,
+      "PREDECESSOR_ID": [ 3 ],
+      "SUCCESSOR_ID": [ 7 ]
+    },
+    "Node6": {
+      "ID": 6,
+      "PREDECESSOR_ID": [ 3 ],
+      "SUCCESSOR_ID": [ ]
+    },
+    "Node7": {
+      "ID": 7,
+      "PREDECESSOR_ID": [ 4, 5 ],
+      "SUCCESSOR_ID": [ ]
+    }
+  }
+}

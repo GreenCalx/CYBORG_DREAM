@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+// NODE MAPPIPING
+//Node
+//  ID :
+//  SUCCESSOR_ID :
+//  PREDECESSOR_ID:
+//
+// -1 as ID means not existing
+//
+//    Structure :
+/*
+
+ 1
+/ \
+2   3
+|  / \
+4 5   6
+|/
+7
+
+*/
+
+
+-->
+
+
+<Graph>
+  
+  <GraphLabel>
+    <value>VISAGE_DIALOG</value>
+  </GraphLabel>
+  
+  <Node>
+    <ID>1</ID>
+    <PREDECESSOR_ID type="array">
+      <value></value>
+      </PREDECESSOR_ID>
+    <SUCCESSOR_ID type="array">
+      <value value="2">2</value>
+      <value value="3">3</value>
+    </SUCCESSOR_ID>
+  </Node>
+
+  <Node>
+    <ID>2</ID>
+    <PREDECESSOR_ID type="array">
+      <value>1</value>
+    </PREDECESSOR_ID>
+    <SUCCESSOR_ID type="array">
+      <value>4</value>
+    </SUCCESSOR_ID>
+  </Node>
+
+  <Node>
+    <ID>3</ID>
+    <PREDECESSOR_ID type="array">
+      <value>1</value>
+    </PREDECESSOR_ID>
+    <SUCCESSOR_ID type="array">
+      <value>5</value>
+      <value>6</value>
+    </SUCCESSOR_ID>
+  </Node>
+
+  <Node>
+    <ID>4</ID>
+    <PREDECESSOR_ID type="array">
+      <value>2</value>
+    </PREDECESSOR_ID>
+    <SUCCESSOR_ID type="array">
+      <value>7</value>
+    </SUCCESSOR_ID>
+  </Node>
+
+  <Node>
+    <ID>5</ID>
+    <PREDECESSOR_ID type="array">
+      <value>3</value>
+    </PREDECESSOR_ID>
+    <SUCCESSOR_ID type="array">
+      <value>7</value>
+    </SUCCESSOR_ID>
+  </Node>
+
+  <Node>
+    <ID>6</ID>
+    <PREDECESSOR_ID type="array">
+      <value>3</value>
+    </PREDECESSOR_ID>
+    <SUCCESSOR_ID type="array"> 
+      <value></value>
+    </SUCCESSOR_ID>
+  </Node>
+
+  <Node>
+    <ID>7</ID>
+    <PREDECESSOR_ID type="array">
+      <value>4</value>
+      <value>5</value>
+    </PREDECESSOR_ID>
+    <SUCCESSOR_ID type="array">
+      <value></value>
+    </SUCCESSOR_ID>
+  </Node>
+  
+</Graph>

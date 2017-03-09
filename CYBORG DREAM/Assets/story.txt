@@ -1,0 +1,20 @@
+The Island :
+
+The starting point, an island with two broken columns and a giant face floating inbetween. The player can talk to this
+or wander around a little. He may, after some 'puzzle solving' and 'fighting' find a deceased body
+with a Cortical Transponder on it. The player may equip it and move to the next chapter.
+
+
+The Travel :
+
+while visiting the first zone, the player should encounter a wood panel advertising
+for a trip planning company. it has a button on it, that once pressed calls the company
+if you are in possession of the Cortical Transponder.
+Once the players calls the company, called Drifting Overseas,  a boat comes in and let the 
+palyer go onto. The boat then continue his way picking up someone on another island ( there
+are a lot of similar island with on people on it in the sea ). The dude coming in is called
+Steve. They May discuss on the boat. Finally the boat should arrive at Chess-City.
+
+Chess-City :
+
+The Prisoner Tower :
