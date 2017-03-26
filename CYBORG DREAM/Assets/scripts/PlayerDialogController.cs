@@ -26,20 +26,31 @@ public class PlayerDialogController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            
+           
         tryToTalk = Input.GetButton("Talk");
 
-        if ( isTalking && tryToTalk && !!_currentDialogTarget )
+
+        if (isTalking && tryToTalk && !!_currentDialogTarget)
         {
-            DialogElapsed = DialogRefTime - Time.time;
-            if ( DialogElapsed >= DialogWaitTime )
+            DialogElapsed = Time.time - DialogRefTime;
+            if (DialogElapsed >= DialogWaitTime)
             {
                 // TALK
                 Talk();
                 DialogRefTime = Time.time;
             }
-                
+            return;
         }
+
+
+
+        if (tryToTalk && !isTalking && !_currentDialogTarget && (GOInTalkingRange.Count > 0))
+        {
+            InitDialog( GOInTalkingRange[0] );
+            return;
+        }
+
+
             
     }
 
@@ -60,24 +71,21 @@ public class PlayerDialogController : MonoBehaviour
     {
         GameObject go = other.gameObject;
 
+        TalkativeController talkativeController = go.GetComponent<TalkativeController>();
+        if (!talkativeController)
+            return;
+
         bool isInRange = false;
         foreach (GameObject g in GOInTalkingRange)
             isInRange = (g.Equals(go));
         if (!isInRange)
             GOInTalkingRange.Add(go);
-        
-        // Poll for talk
-        if (tryToTalk)
-            InitDialog(other);
     }
 
-    int InitDialog(Collider other)
+    int InitDialog(GameObject colliderGO)
     {
         Debug.Log(".... Talking --- INIT ");
 
-        GameObject colliderGO = other.gameObject;
-        if (!colliderGO)
-            return -1;
         Debug.Log("Talking to : " + colliderGO.name);
         TalkativeController talkativeNPC = colliderGO.GetComponent<TalkativeController>();
         if (!!talkativeNPC)
